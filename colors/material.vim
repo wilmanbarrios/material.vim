@@ -220,6 +220,38 @@ call s:SetHighlight('Underlined', s:blue, '', '')
 call s:SetHighlight('Error', s:bg, s:red, '')
 call s:SetHighlight('Todo', s:orange, s:bg, 'italic')
 
+call s:SetHighlight('MaterialRed', s:red, '', '')
+call s:SetHighlight('MaterialYellow', s:yellow, '', '')
+call s:SetHighlight('MaterialBlue', s:blue, '', '')
+call s:SetHighlight('MaterialCyan', s:cyan, '', '')
+
+call s:SetHighlight('MaterialRedSign', s:red, '', 'italic')
+call s:SetHighlight('MaterialYellowSign', s:yellow, '', 'italic')
+call s:SetHighlight('MaterialBlueSign', s:blue, '', 'italic')
+call s:SetHighlight('MaterialCyanSign', s:cyan, '', 'italic')
+
+call s:SetHighlight('MaterialRedUnderline', s:red, '', 'undercurl')
+call s:SetHighlight('MaterialYellowUnderline', s:yellow, '', 'undercurl')
+call s:SetHighlight('MaterialBlueUnderline', s:blue, '', 'undercurl')
+call s:SetHighlight('MaterialCyanUnderline', s:cyan, '', 'undercurl')
+
+" LSP
+hi! link LspDiagnosticsDefaultError MaterialRed
+hi! link LspDiagnosticsSignError MaterialRedSign
+hi! link LspDiagnosticsUnderlineError MaterialRedUnderline
+
+hi! link LspDiagnosticsDefaultWarning MaterialYellow
+hi! link LspDiagnosticsSignWarning MaterialYellowSign
+hi! link LspDiagnosticsUnderlineWarning MaterialYellowUnderline
+
+hi! link LspDiagnosticsDefaultInformation MaterialBlue
+hi! link LspDiagnosticsSignInformation MaterialBlueSign
+hi! link LspDiagnosticsUnderlineInformation MaterialBlueUnderline
+
+hi! link LspDiagnosticsDefaultHint MaterialCyan
+hi! link LspDiagnosticsSignHint MaterialCyanSign
+hi! link LspDiagnosticsUnderlineHint MaterialCyanUnderline
+
 " Legacy groups for official git.vim and diff.vim syntax
 hi! link diffFile DiffAdd
 hi! link diffNewFile DiffDelete
