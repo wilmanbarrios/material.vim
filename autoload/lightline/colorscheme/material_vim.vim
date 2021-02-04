@@ -1,7 +1,7 @@
 if (exists('g:lightline'))
   let s:lighter_middle_fg = g:material_theme_style == 'lighter' ?
     \ g:material_colorscheme_map.fg :
-    \ g:material_colorscheme_map.invisibles
+    \ g:material_colorscheme_map.fg
 
   let s:palette = { 'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {} }
 
@@ -14,7 +14,7 @@ if (exists('g:lightline'))
       \ g:material_colorscheme_map.cyan.cterm
     \ ], [
       \ g:material_colorscheme_map.fg.gui,
-      \ g:material_colorscheme_map.line_numbers.gui,
+      \ g:material_colorscheme_map.invisibles.gui,
       \ g:material_colorscheme_map.fg.cterm,
       \ g:material_colorscheme_map.selection.cterm
     \ ] ]
