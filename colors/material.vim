@@ -82,7 +82,7 @@ if g:material_theme_style == 'palenight' || g:material_theme_style == 'palenight
   let s:comments = { 'gui': '#676e95', 'cterm': 60 }
   let s:selection = { 'gui': '#343b51', 'cterm': 60 }
   let s:guides = { 'gui': '#4e5579', 'cterm': 60 }
-  let s:line_numbers = { 'gui': '#3a3f58', 'cterm': 60 }
+  let s:line_numbers = { 'gui': '#4e5579', 'cterm': 60 }
   let s:line_highlight = { 'gui': '#1c1f2b', 'cterm': 234 }
 elseif g:material_theme_style == 'darker' || g:material_theme_style == 'darker-community'
   let s:bg = { 'gui': '#212121', 'cterm': 'none' }
@@ -160,7 +160,7 @@ call s:SetHighlight('ColorColumn', '', s:invisibles, '')
 call s:SetHighlight('Cursor', s:bg, s:caret, '')
 call s:SetHighlight('CursorColumn', '', s:line_highlight, '')
 call s:SetHighlight('CursorLine', '', s:line_highlight, '')
-call s:SetHighlight('CursorLineNr', s:comments, '', '')
+call s:SetHighlight('CursorLineNr', s:fg, '', '')
 call s:SetHighlight('Directory', s:blue, '', '')
 call s:SetHighlight('DiffAdd', s:green, s:bg, '')
 call s:SetHighlight('DiffDelete', s:red, s:bg, '')
