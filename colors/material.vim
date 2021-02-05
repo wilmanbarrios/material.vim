@@ -156,7 +156,7 @@ let g:material_colorscheme_map.violet = s:violet
 " === Highlights ===
 
 " Vim Editor
-call s:SetHighlight('ColorColumn', '', s:invisibles, '')
+call s:SetHighlight('ColorColumn', '', s:selection, '')
 call s:SetHighlight('Cursor', s:bg, s:caret, '')
 call s:SetHighlight('CursorColumn', '', s:line_highlight, '')
 call s:SetHighlight('CursorLine', '', s:line_highlight, '')
