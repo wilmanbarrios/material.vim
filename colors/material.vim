@@ -559,6 +559,11 @@ if has('nvim')
   call s:SetHighlight('NERDTreeFile', s:fg, '', '')
 endif
 
+" NvimTree
+if has('nvim')
+  call s:SetHighlight('NvimTreeFolderIcon', s:fg, '', '')
+endif
+
 " coc.nvim
 call s:SetHighlight('CocMarkdownLink', s:purple, '', '')
 call s:SetHighlight('CocErrorSign', s:red, '', '')
