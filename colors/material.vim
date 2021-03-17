@@ -603,6 +603,20 @@ call s:SetHighlight("TSParameter", s:fg, '', '')
 call s:SetHighlight("TSVariable", s:fg, '', '')
 call s:SetHighlight("TSVariableBuiltin", s:red, '', '')
 
+
+" Telescope.nvim
+call s:SetHighlight("TelescopeNormal", s:fg, '', '')
+call s:SetHighlight("TelescopeSelection", s:paleblue, '', '')
+call s:SetHighlight("TelescopeSelectionCaret", s:fg, '', '')
+call s:SetHighlight("TelescopeMultiSelection", s:cyan, '', '')
+call s:SetHighlight("TelescopeBorder", s:fg, '', '')
+call s:SetHighlight("TelescopePromptBorder", s:fg, '', '')
+call s:SetHighlight("TelescopeResultsBorder", s:fg, '', '')
+call s:SetHighlight("TelescopePreviewBorder", s:fg, '', '')
+call s:SetHighlight("TelescopeMatching", s:yellow, '', '')
+call s:SetHighlight("TelescopePromptPrefix", s:red, '', '')
+call s:SetHighlight("TelescopePrompt", s:fg, '', '')
+
 " Neovim terminal colors
 if has('nvim')
   let g:terminal_color_background = s:bg.gui
