@@ -616,8 +616,8 @@ call s:SetHighlight("TSVariableBuiltin", s:red, '', '')
 
 " Telescope.nvim
 call s:SetHighlight("TelescopeNormal", s:fg, '', '')
-call s:SetHighlight("TelescopeSelection", s:paleblue, '', '')
-call s:SetHighlight("TelescopeSelectionCaret", s:fg, '', '')
+call s:SetHighlight("TelescopeSelection", '', s:line_highlight, '')
+call s:SetHighlight("TelescopeSelectionCaret", s:red, '', '')
 call s:SetHighlight("TelescopeMultiSelection", s:cyan, '', '')
 call s:SetHighlight("TelescopeBorder", s:fg, '', '')
 call s:SetHighlight("TelescopePromptBorder", s:fg, '', '')
