@@ -602,7 +602,17 @@ call s:SetHighlight("TSInclude", s:purple, '', '')
 call s:SetHighlight("TSParameter", s:fg, '', '')
 call s:SetHighlight("TSVariable", s:fg, '', '')
 call s:SetHighlight("TSVariableBuiltin", s:red, '', '')
+" call s:SetHighlight("TSCurrentScope", '', s:selection, '')
+" call s:SetHighlight("TSDefinition", '', s:selection, '')
 
+" tjdevries/express_line.nvim
+" call s:SetHighlight('ElNormal', s:bg, s:fg, '')
+" call s:SetHighlight('ElVisual', s:line_highlight, s:cyan, '')
+" call s:SetHighlight('ElVisualLine', s:line_highlight, s:cyan, '')
+" call s:SetHighlight('ElVisualBlock', s:line_highlight, s:cyan, '')
+" call s:SetHighlight('ElInsert', s:line_highlight, s:blue, '')
+" call s:SetHighlight('ElReplace', s:line_highlight, s:green, '')
+" call s:SetHighlight('ElCommand', s:line_highlight, s:purple, '')
 
 " Telescope.nvim
 call s:SetHighlight("TelescopeNormal", s:fg, '', '')
