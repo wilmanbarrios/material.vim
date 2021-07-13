@@ -235,6 +235,8 @@ call s:SetHighlight('MaterialYellowUnderline', s:yellow, '', 'undercurl')
 call s:SetHighlight('MaterialBlueUnderline', s:blue, '', 'undercurl')
 call s:SetHighlight('MaterialCyanUnderline', s:cyan, '', 'undercurl')
 
+call s:SetHighlight('MaterialPink', s:pink, '', '')
+
 " LSP
 hi! link LspDiagnosticsDefaultError MaterialRed
 hi! link LspDiagnosticsSignError MaterialRedSign
@@ -595,11 +597,12 @@ call s:SetHighlight("TSKeyword", s:purple, '', '')
 call s:SetHighlight("TSKeywordOperator", s:purple, '', '')
 call s:SetHighlight("TSError", s:red, '', '')
 call s:SetHighlight("TSException", s:purple, '', '')
-call s:SetHighlight("TSTag", s:red, '', '')
+call s:SetHighlight("TSTag", s:pink, '', '')
+call s:SetHighlight("TSTagDelimiter", s:cyan, '', '')
 call s:SetHighlight("TSType", s:yellow, '', '')
 call s:SetHighlight("TSTypeBuiltin", s:purple, '', '')
 call s:SetHighlight("TSInclude", s:purple, '', '')
-call s:SetHighlight("TSParameter", s:fg, '', '')
+call s:SetHighlight("TSParameter", s:red, '', '')
 call s:SetHighlight("TSVariable", s:fg, '', '')
 call s:SetHighlight("TSVariableBuiltin", s:red, '', '')
 " call s:SetHighlight("TSCurrentScope", '', s:selection, '')
